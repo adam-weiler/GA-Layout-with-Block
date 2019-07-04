@@ -2,22 +2,29 @@
     margin: 0 auto;
     padding: 0;
     width: 970px;
+    font-size: 26px;
+    font-family: Sans-Serif;
     box-sizing: border-box;
 }
 
 header { /* Bitmaker Photo Gallery */
     width: 100%;
-    height: 75px;
+    height: 70px;
     text-align: center;
     color: #FFF;
     background-color: rgba(0,0,0,.8);
 }
 
+header h1 {
+    font-weight: 900;
+    font-size: 1.3em;
+    line-height: 70px;
+}
+
 nav { /* Home, Add a Photo, About */
-    margin-bottom: 15px;
+    margin-bottom: 24px;
     width: 100%;
     height: 35px;
-    background-color: cyan;
 }
 
 nav ul {
@@ -26,8 +33,10 @@ nav ul {
 
 nav ul li {
     width: auto;
-    padding: 10px 8px;
+    padding: 5px 8px;
     display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
     color: #FFF;
     background-color: #D3D3D3;
 }
@@ -42,7 +51,7 @@ main section {
     justify-content: space-between; */
 }
 
-section:first-child { /* The very first section. */
+section:first-child { /* There are x photos. */
     height: 65px;
     background-color: #80ffd0;
 }
@@ -60,7 +69,8 @@ section h2 { /* There are x photos. */
 
 .photo { /* Each individual article. */ 
     width: 300px;
-    height: 400px;
+    height: auto;
+                height: 400px;
     display: inline-block;
     text-align: center;
     background-color: green;
